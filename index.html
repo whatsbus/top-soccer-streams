@@ -3,92 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Soccer Streams - Live Football Matches</title>
+    <title>Top Soccer Streams - Live Football Matches HD</title>
+    <!-- Adsterra Social Bar Script (حط الكود هنا) -->
     <style>
-        :root { --main-color: #008753; --bg-color: #f0f2f5; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg-color); margin: 0; padding: 0; direction: ltr; }
-        header { background: #1a1a1a; color: white; padding: 15px; text-align: center; border-bottom: 4px solid var(--main-color); }
-        .container { max-width: 800px; margin: 20px auto; padding: 10px; }
-       
-        /* Match Box Style */
-        .match-card {
-            display: flex; justify-content: space-between; align-items: center;
-            background: white; margin-bottom: 15px; padding: 15px;
-            border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-decoration: none; color: black; transition: 0.3s;
-            border-left: 6px solid var(--main-color);
-        }
-        .match-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-       
-        .team { width: 35%; text-align: center; }
-        .team img { width: 50px; height: 50px; object-fit: contain; }
-        .team p { margin: 5px 0; font-weight: bold; font-size: 0.9em; }
-       
-        .match-info { width: 30%; text-align: center; }
-        .match-time { background: #eee; padding: 5px 10px; border-radius: 20px; font-weight: bold; font-size: 0.8em; }
-        .league-name { font-size: 0.7em; color: #666; margin-top: 5px; display: block; }
-        .channel { font-size: 0.75em; color: var(--main-color); font-weight: bold; margin-top: 5px; display: block; }
-       
-        /* Ad Spaces */
-        .ad-banner { background: #ddd; margin: 15px 0; padding: 10px; text-align: center; color: #888; font-size: 12px; border: 1px dashed #bbb; }
-        .btn-live { background: var(--main-color); color: white; padding: 8px 15px; border-radius: 5px; font-size: 0.8em; margin-top: 10px; display: inline-block; border: none; cursor: pointer; }
+        :root{ --bg:#0b0f19; --card:#161b2a; --accent:#00ff88; --text:#f1f5f9; --muted:#94a3b8; }
+        *{ margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Roboto, sans-serif; }
+        body{ background:var(--bg); color:var(--text); padding:15px; line-height: 1.5; }
+        header{ text-align:center; padding:30px 0; background: linear-gradient(180deg, #000, var(--bg)); }
+        header h1{ font-size:24px; color: var(--accent); letter-spacing: 1px; }
+        .matches{ display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px; max-width: 1200px; margin: auto; }
+        .match-card{ background:var(--card); border-radius:15px; padding:20px; text-decoration:none; color:var(--text); transition:0.3s; border: 1px solid #232d45; display: block; position: relative; overflow: hidden; }
+        .match-card:hover{ transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
+        .league{ font-size:12px; color:var(--accent); font-weight: bold; text-transform: uppercase; margin-bottom:15px; display: flex; justify-content: space-between; }
+        .live-dot { color: red; animation: blink 1s infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+        .teams{ display:flex; justify-content:space-between; align-items:center; }
+        .team{ display:flex; flex-direction:column; align-items:center; flex:1; }
+        .team img{ width:55px; height:55px; object-fit:contain; margin-bottom:10px; filter: drop-shadow(0 0 5px rgba(0,0,0,0.5)); }
+        .team span { font-size: 14px; font-weight: 600; }
+        .time-box{ flex:1; text-align:center; }
+        .time{ font-size:18px; font-weight:bold; color:#fff; display: block; }
+        .status { font-size: 11px; color: var(--muted); }
+        .btn-watch { margin-top: 15px; background: var(--accent); color: #000; text-align: center; padding: 8px; border-radius: 8px; font-weight: bold; font-size: 13px; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>TOP SOCCER STREAMS</h1>
-    <p>Live HD Sports - English Commentary</p>
+    <h1>TOP SOCCER STREAMS ⚽</h1>
+    <p style="color: var(--muted); font-size: 14px;">Live HD Coverage - Global Channels</p>
 </header>
 
-<div class="container">
-   
-    <!-- Adsterra Top Banner Space -->
-    <div class="ad-banner">ADVERTISEMENT - PLACE ADSTERRA BANNER HERE</div>
-
-    <!-- START MATCH 1 -->
-    <a href="YOUR_ADSTERRA_DIRECT_LINK" class="match-card">
-        <div class="team">
-            <img src="https://ssl.gstatic.com" alt="Man City">
-            <p>Man City</p>
+<div class="matches">
+    <!-- Match Card 1 -->
+    <a href="YOUR_ADSTERRA_DIRECT_LINK" target="_blank" class="match-card">
+        <div class="league">Premier League <span class="live-dot">● LIVE</span></div>
+        <div class="teams">
+            <div class="team">
+                <img src="https://ssl.gstatic.com" alt="Man City">
+                <span>Man City</span>
+            </div>
+            <div class="time-box">
+                <span class="time">20:00</span>
+                <span class="status">GMT Time</span>
+            </div>
+            <div class="team">
+                <img src="https://ssl.gstatic.com" alt="Liverpool">
+                <span>Liverpool</span>
+            </div>
         </div>
-        <div class="match-info">
-            <span class="match-time">20:00 GMT</span>
-            <span class="league-name">Premier League</span>
-            <span class="channel">Sky Sports Premier League</span>
-            <div class="btn-live">Watch Now</div>
-        </div>
-        <div class="team">
-            <img src="https://ssl.gstatic.com" alt="Liverpool">
-            <p>Liverpool</p>
-        </div>
+        <div class="btn-watch">CLICK TO WATCH LIVE</div>
     </a>
-    <!-- END MATCH 1 -->
 
-    <!-- START MATCH 2 -->
-    <a href="YOUR_ADSTERRA_DIRECT_LINK" class="match-card">
-        <div class="team">
-            <img src="https://ssl.gstatic.com" alt="Real Madrid">
-            <p>Real Madrid</p>
+    <!-- Match Card 2 -->
+    <a href="YOUR_ADSTERRA_DIRECT_LINK" target="_blank" class="match-card">
+        <div class="league">La Liga <span class="live-dot">● LIVE</span></div>
+        <div class="teams">
+            <div class="team">
+                <img src="https://ssl.gstatic.com" alt="Real Madrid">
+                <span>Real Madrid</span>
+            </div>
+            <div class="time-box">
+                <span class="time">22:30</span>
+                <span class="status">GMT Time</span>
+            </div>
+            <div class="team">
+                <img src="https://ssl.gstatic.com" alt="Bayern">
+                <span>Bayern</span>
+            </div>
         </div>
-        <div class="match-info">
-            <span class="match-time">21:00 GMT</span>
-            <span class="league-name">Champions League</span>
-            <span class="channel">TNT Sports 1</span>
-            <div class="btn-live">Watch Now</div>
-        </div>
-        <div class="team">
-            <img src="https://ssl.gstatic.com" alt="Bayern">
-            <p>Bayern Munich</p>
-        </div>
+        <div class="btn-watch">CLICK TO WATCH LIVE</div>
     </a>
-    <!-- END MATCH 2 -->
-
-    <div class="ad-banner">ADSTERRA DIRECT LINK ADS HERE</div>
-
 </div>
 
-<!-- Adsterra Popunder Script Here -->
+<!-- Adsterra Popunder Script -->
+<script type='text/javascript' src='//your-popunder-code.js'></script>
 
 </body>
 </html>
