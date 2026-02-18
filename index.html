@@ -1,83 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Soccer Streams - Live Football Matches HD</title>
-    <!-- Adsterra Social Bar Script (حط الكود هنا) -->
-    <style>
-        :root{ --bg:#0b0f19; --card:#161b2a; --accent:#00ff88; --text:#f1f5f9; --muted:#94a3b8; }
-        *{ margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Roboto, sans-serif; }
-        body{ background:var(--bg); color:var(--text); padding:15px; line-height: 1.5; }
-        header{ text-align:center; padding:30px 0; background: linear-gradient(180deg, #000, var(--bg)); }
-        header h1{ font-size:24px; color: var(--accent); letter-spacing: 1px; }
-        .matches{ display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:20px; max-width: 1200px; margin: auto; }
-        .match-card{ background:var(--card); border-radius:15px; padding:20px; text-decoration:none; color:var(--text); transition:0.3s; border: 1px solid #232d45; display: block; position: relative; overflow: hidden; }
-        .match-card:hover{ transform: translateY(-5px); border-color: var(--accent); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
-        .league{ font-size:12px; color:var(--accent); font-weight: bold; text-transform: uppercase; margin-bottom:15px; display: flex; justify-content: space-between; }
-        .live-dot { color: red; animation: blink 1s infinite; }
-        @keyframes blink { 50% { opacity: 0; } }
-        .teams{ display:flex; justify-content:space-between; align-items:center; }
-        .team{ display:flex; flex-direction:column; align-items:center; flex:1; }
-        .team img{ width:55px; height:55px; object-fit:contain; margin-bottom:10px; filter: drop-shadow(0 0 5px rgba(0,0,0,0.5)); }
-        .team span { font-size: 14px; font-weight: 600; }
-        .time-box{ flex:1; text-align:center; }
-        .time{ font-size:18px; font-weight:bold; color:#fff; display: block; }
-        .status { font-size: 11px; color: var(--muted); }
-        .btn-watch { margin-top: 15px; background: var(--accent); color: #000; text-align: center; padding: 8px; border-radius: 8px; font-weight: bold; font-size: 13px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Top Soccer Streams | Watch Live Football Matches Today</title>
+<meta name="description" content="Watch today's football matches live in HD quality. Follow major European and international leagues with multiple streaming options and match updates.">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.yourdomain.com/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Top Soccer Streams | Watch Live Football Matches Today">
+<meta property="og:description" content="Live streaming of today's football matches in high quality without interruption.">
+<meta property="og:type" content="website">
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+header{
+    background:#000;
+    padding:15px 0;
+}
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+.logo{
+    color:#fff;
+    font-size:24px;
+    font-weight:bold;
+}
+nav{
+    margin-top:10px;
+}
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-right:15px;
+    font-size:15px;
+}
+nav a:hover{
+    color:#ff0000;
+}
+.match-card{
+    background:#fff;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+.match-teams{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:bold;
+    font-size:18px;
+}
+.match-info{
+    text-align:center;
+    margin-top:10px;
+    font-size:14px;
+    color:#555;
+}
+footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px 0;
+    margin-top:40px;
+    font-size:14px;
+}
+.btn{
+    display:inline-block;
+    background:#e50914;
+    color:#fff;
+    padding:8px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    font-size:14px;
+    margin-top:10px;
+}
+.btn:hover{
+    background:#b20710;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>TOP SOCCER STREAMS ⚽</h1>
-    <p style="color: var(--muted); font-size: 14px;">Live HD Coverage - Global Channels</p>
+<div class="container">
+<div class="logo">Top Soccer Streams</div>
+<nav>
+<a href="#">Today's Matches</a>
+<a href="#">Tomorrow's Matches</a>
+<a href="#">Sports News</a>
+</nav>
+</div>
 </header>
 
-<div class="matches">
-    <!-- Match Card 1 -->
-    <a href="YOUR_ADSTERRA_DIRECT_LINK" target="_blank" class="match-card">
-        <div class="league">Premier League <span class="live-dot">● LIVE</span></div>
-        <div class="teams">
-            <div class="team">
-                <img src="https://ssl.gstatic.com" alt="Man City">
-                <span>Man City</span>
-            </div>
-            <div class="time-box">
-                <span class="time">20:00</span>
-                <span class="status">GMT Time</span>
-            </div>
-            <div class="team">
-                <img src="https://ssl.gstatic.com" alt="Liverpool">
-                <span>Liverpool</span>
-            </div>
-        </div>
-        <div class="btn-watch">CLICK TO WATCH LIVE</div>
-    </a>
+<div class="container">
 
-    <!-- Match Card 2 -->
-    <a href="YOUR_ADSTERRA_DIRECT_LINK" target="_blank" class="match-card">
-        <div class="league">La Liga <span class="live-dot">● LIVE</span></div>
-        <div class="teams">
-            <div class="team">
-                <img src="https://ssl.gstatic.com" alt="Real Madrid">
-                <span>Real Madrid</span>
-            </div>
-            <div class="time-box">
-                <span class="time">22:30</span>
-                <span class="status">GMT Time</span>
-            </div>
-            <div class="team">
-                <img src="https://ssl.gstatic.com" alt="Bayern">
-                <span>Bayern</span>
-            </div>
-        </div>
-        <div class="btn-watch">CLICK TO WATCH LIVE</div>
-    </a>
+<h1>Watch Live Football Matches Today</h1>
+<p>
+Top Soccer Streams provides high-quality live coverage for today's football matches.
+Follow major European and international competitions including the Premier League,
+La Liga, Serie A, Bundesliga, Ligue 1, and the UEFA Champions League.
+</p>
+
+<div class="match-card">
+<div class="match-teams">
+<span>Real Madrid</span>
+<span>vs</span>
+<span>Benfica</span>
+</div>
+<div class="match-info">
+Kick-off: 21:00 | UEFA Champions League
+<br>
+<a href="#" class="btn">Watch Live</a>
+</div>
 </div>
 
-<!-- Adsterra Popunder Script -->
-<script type='text/javascript' src='//your-popunder-code.js'></script>
+<div class="match-card">
+<div class="match-teams">
+<span>Galatasaray</span>
+<span>vs</span>
+<span>Juventus</span>
+</div>
+<div class="match-info">
+Kick-off: 18:45 | UEFA Champions League
+<br>
+<a href="#" class="btn">Watch Live</a>
+</div>
+</div>
+
+<div class="match-card">
+<div class="match-teams">
+<span>Monaco</span>
+<span>vs</span>
+<span>Paris Saint-Germain</span>
+</div>
+<div class="match-info">
+Kick-off: 21:00 | UEFA Champions League
+<br>
+<a href="#" class="btn">Watch Live</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+All Rights Reserved © 2026 Top Soccer Streams
+</footer>
 
 </body>
 </html>
